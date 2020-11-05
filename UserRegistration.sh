@@ -23,3 +23,14 @@ then
 else
         echo "invalid"
 fi
+
+#As A User Enter A Valid Email
+read -p "Enter a valid email id - " email
+email_pattern="^[a-zA-Z]{3}[0-9a-zA-Z\.]*@[a-z]*\.(co|in)$";
+
+if [[ $email =~ $email_pattern ]]
+then
+        echo "valid"
+else
+        echo "invalid"
+fi

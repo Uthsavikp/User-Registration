@@ -11,3 +11,15 @@ then
 else
         echo "invalid"
 fi
+
+
+#User Needs To Enter Valid Last Name
+read -p "Enter your last name - " lastName
+pattern1="^[A-Z]{1}[a-zA-Z]{2,}$";
+
+if [[ $lastName =~ $pattern1 ]]
+then
+        echo "valid"
+else
+        echo "invalid"
+fi

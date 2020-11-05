@@ -50,9 +50,12 @@ fi
 read -p "Enter your password - " passwordCharacter
 password_character_pattern="^[a-z]{8,}$"
 
-if [[ $passwordCharacter =~ $password_character_patter]]
+if [[ $passwordCharacter =~ $password_character_patter ]]
 then 
 	echo "valid"
 else
 	echo "invalid"
 fi
+
+
+

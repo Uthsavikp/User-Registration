@@ -34,3 +34,14 @@ then
 else
         echo "invalid"
 fi
+
+#To Follow Pre-Defined Mobile Number
+read -p "Enter your mobile number - " mobileNumber
+mobile_number_pattern="^(91\ )[6-9]{1}[0-9]{9}$";
+
+if [[ $mobileNumber =~ $mobile_number_pattern ]]
+then
+        echo "valid"
+else
+        echo "invalid"
+fi

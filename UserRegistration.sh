@@ -45,3 +45,14 @@ then
 else
         echo "invalid"
 fi
+
+#To Accept Minimum Eight Characters In Password
+read -p "Enter your password - " passwordCharacter
+password_character_pattern="^[a-z]{8,}$"
+
+if [[ $passwordCharacter =~ $password_character_patter]]
+then 
+	echo "valid"
+else
+	echo "invalid"
+fi

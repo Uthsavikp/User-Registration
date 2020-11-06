@@ -47,10 +47,10 @@ else
 fi
 
 #To Accept Minimum Eight Characters In Password
-read -p "Enter your password - " passwordCharacter
-password_character_pattern="^[a-z]{8,}$"
+read -p "Enter your password - " password
+password_pattern="^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])"
 
-if [[ $passwordCharacter =~ $password_character_patter]]
+if [[ $password =~ $password_pattern ]]
 then 
 	echo "valid"
 else

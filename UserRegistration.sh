@@ -46,9 +46,10 @@ else
         echo "invalid"
 fi
 
-#To Accept Minimum  Of Eight Characters In Password
-read -p "Enter your password with minimum eight character- " password
-password_pattern="^[a-z]{8,}$";
+
+#To Enter Atleast One Upper Case In Password
+read -p "Enter your password - " password
+password_pattern="^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])$";
 
 if [[ $password =~ $password_pattern ]]
 then 

@@ -47,9 +47,9 @@ else
 fi
 
 
-#To Enter Atleast One Upper Case In Password
+#To Accept Atleast One Numeric Number In Password
 read -p "Enter your password - " password
-password_pattern="^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])$";
+password_pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})$";
 
 if [[ $password =~ $password_pattern ]]
 then 

@@ -46,7 +46,7 @@ else
         echo "invalid"
 fi
 
-#To Accept Minimum Eight Characters In Password
+#To Accept Minimum  Of Eight Characters In Password
 read -p "Enter your password with minimum eight character- " password
 password_pattern="^[a-z]{8,}$"
 

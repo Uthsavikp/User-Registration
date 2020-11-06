@@ -48,7 +48,7 @@ fi
 
 #To Enter Atleast One Upper Case In Password
 read -p "Enter your password - " password
-password_pattern="^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])"
+password_pattern="^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])$";
 
 if [[ $password =~ $password_pattern ]]
 then 

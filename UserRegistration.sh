@@ -58,4 +58,13 @@ else
 	echo "invalid"
 fi
 
- 
+#To Check All Email Samples Provided
+read -p "Enter a email address to check if its valid or not - " sampleEmails
+regex_pattern="^[a-zA-z]{3}[0-9a-zA-Z\.\_\-\+]*\@[a-z0-9]*\.(com.au|in|net|in|com.com|com|)$"
+
+if [[ $sampleEmails =~ $regex_pattern ]]
+then
+	echo "valid"
+else
+	echo "invalid"
+fi

@@ -47,7 +47,7 @@ else
 fi
 
 
- #To Accept Atleast One Numeric Number In Password
+#To Accept Exactly One Special Character
 read -p "Enter your password - " password
 password_pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[\$\?\#\@\%])(?=.{8,})$";
 
